@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko"></html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+       
+        var chung = {};
+        var hong = {};
+        chung.num = Math.random();
+        hong.num = Math.random();
+        chung.result= result(chung.num);
+        hong.result= result(hong.num);
+        chung.img = img(chung.result)
+        hong.img = img(hong.result)
+
+        var final;
+        if(chung.result=='가위'&&hong.result=='바위') {final = '홍 승'}
+        else if(chung.result=='가위'&&hong.result=='보') {final = '청 승'}
+        else if(chung.result=='바위'&&hong.result=='보') {final = '홍 승'}
+        else if(chung.result=='바위'&&hong.result=='가위') {final = '청 승'}
+        else if(chung.result=='보'&&hong.result=='바위') {final = '청 승'}
+        else if(chung.result=='보'&&hong.result=='가위') {final = '홍 승'}
+        else {final = '무승부'}
+        function result(a) {
+            if(a<=0.3333) {
+                return '가위';}
+               else if(a<=0.6666){
+                return '바위';}
+                else {return '보';}
+               }
+               function img(a){
+                   if(a=='가위') {return '1.png'}
+                   if(a=='바위') {return '2.png'}
+                   if(a=='보') {return '3.png'}
+               }
+               
+        document.write('<h2 style="color:blue">청:<img src="img/'+chung.img+'" class="rss"></h2>');
+        document.write('<h2 style="color:red">홍:<img src="img/'+hong.img+'" class="rss"></h2>');
+        document.write('<h1>결과: '+final+'</h1>');
+       
+    </script>
+       <style> 
+        .rss{width: 100px;}
+    </style>
+</head>
+<body>
+</html>
