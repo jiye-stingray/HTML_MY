@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/*main
+-----------------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "나눔고딕";
+    line-height: 1.7;
+    color: #4C0B5F;
+}
+a{
+    text-decoration: none;
+}
+image{
+    max-width: 100%;
+}
+.logo{
+    width: 300px;
+    height: 100px;
+    margin-top: 14px;
+}
+
+#main-text{
+   margin-top: 12px;
+   font-size: 3rem;
+   font-family: 'Roboto+Mono',serif;
+    text-transform: uppercase;
+}
+
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 40px;
+}
+.main-nav a{
+    color: #4C0B5F;
+}
+.main-nav a:hover{
+    color: #F781F3;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/*메인 메타몽 설명
+-------------------------*/
+.main-content{
+    text-align: center;
+    margin-top: 10%;
+}
+.main-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/*제목*/
+.main-title{
+    font-size: 3rem;
+    font-family: 'Roboto+Mono',serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* 버튼*/
+.button{
+    font-size: 1.375rem;
+    background-color: #F781F3;
+    color: #fff;
+    border-radius: 5px;
+    padding:18px 32px;
+}
+.button:hover{
+    background-color: aqua;
+}
+/*홈 백그라운드 이미지*/
+#home{
+    background-image: linear-gradient( #E2A9F3,#F781F3);
+    min-height: 100vh;
+}
+/*푸터*/
+footer{
+    margin-top:100px;
+    background: #4C0B5F;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 0.875rem;
+}
+/*introduce
+-------------------------------------*/
+#introduce{
+
+    background-image: url(../images/배너.jfif);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#introduce .main-title{
+    width: 100%;
+    text-align: center;
+}
+
+/*표 부분*/
+article{
+    width: 200%;
+}
