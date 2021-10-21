@@ -239,6 +239,16 @@ aside p{
     .post-cat{
         margin-left: 80px;
     }
+    /*CONTACT*/
+    #contact .page-title{
+        margin-top: 40px;
+    }
+    /*입력 양식*/
+    input[type="text"],
+    input[type="email"],
+    textarea{
+        max-width: 100%;
+    }   
     
 }
 article{
@@ -248,8 +258,116 @@ article{
 aside{
     width: 22%;
     order: 3;
+    padding-left: 40px;
 }
 .ad{
     padding-right: 40px;
     order: 1;
+}
+/*MENU*/
+.menu-content{
+    margin-top: 20%;
+}
+.big-box{
+    grid-column: auto;
+    grid-row: auto;
+}
+.big-box img{
+    height: 100%;
+}
+/*MENU
+-----------------------------------*/
+#menu{
+    background-image: url(../images/menu-bg.jpg);
+    min-height: 100vh;
+}
+.menu-content{
+    max-width: 560px;
+    margin-top: 10%;
+}
+.menu-content .page-title {
+  text-align: center;
+}
+.menu-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+.grid{
+    display: grid;
+    gap:26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+.big-box{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.big-box img{
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+}
+/* CONTACT
+----------------------------------*/
+#contact{
+    background-image: url(../images/contact-bg.jpg);
+    min-height: 100vh;
+}
+/* 입력 양식*/
+form div{
+    margin-bottom: 14px;
+}
+label{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"]{
+    border:none;
+    cursor:pointer;
+    line-height: 1;
+}
+/*가게 정보와 지도*/
+#location{
+    padding: 4% 0;
+}
+#location .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.location-info{
+    width: 22%;
+}
+.location-info p{
+    padding: 12px 10px;
+}
+.location-map{
+    width: 74%;
+}
+/*SNS*/
+#sns{
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+#sns .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title{
+    margin-bottom: 30px;
+}
+.sns-box{
+    width: 30%;
 }

@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/*main
+-----------------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "나눔고딕";
+    line-height: 1.7;
+    color: #4C0B5F;
+}
+a{
+    text-decoration: none;
+}
+image{
+    max-width: 100%;
+}
+.logo{
+    width: 300px;
+    height: 100px;
+    margin-top: 14px;
+}
+
+#main-text{
+   margin-top: 12px;
+   font-size: 3rem;
+   font-family: 'Roboto+Mono',serif;
+    text-transform: uppercase;
+}
+
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 40px;
+}
+.main-nav a{
+    color: #4C0B5F;
+}
+.main-nav a:hover{
+    color: #F781F3;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/*메인 메타몽 설명
+-------------------------*/
+.main-content{
+    text-align: center;
+    margin-top: 10%;
+}
+.main-content p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/*제목*/
+.main-title{
+    font-size: 3rem;
+    font-family: 'Roboto+Mono',serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* 버튼*/
+.button{
+    font-size: 1.375rem;
+    background-color: #F781F3;
+    color: #fff;
+    border-radius: 5px;
+    padding:18px 32px;
+}
+.button:hover{
+    background-color: aqua;
+}
+/*홈 백그라운드 이미지*/
+#home{
+    background-image: linear-gradient( #E2A9F3,#F781F3);
+    min-height: 100vh;
+}
+/*푸터*/
+footer{
+    margin-top:100px;
+    background: #4C0B5F;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 0.875rem;
+}
+/*introduce
+-------------------------------------*/
+#introduce{
+
+ 
+    height: 270px;
+    margin-bottom: 40px;
+}
+#introduce .main-title{
+    width: 100%;
+    text-align: center;
+}
+
+/*표 부분*/
+
+article{
+    width: 200%;
+}
+.introduce-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top:30px;
+   
+}
+#introduce{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table {
+    width:500px; 
+    margin: auto;
+    margin-top: 10px;
+   
+}
+th {
+    background-color: #E3CEF6;
+}
+
+th, td {
+    text-align: center;
+}
+/* CUTE
+-----------------------------*/
+.cute-content{
+    max-width: 560px;
+    margin-top: 10%;
+}
+
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+/* 슬라이드*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+@keyframes fadetop {
+  0% {
+    opacity: 0;
+    top: -150px;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+

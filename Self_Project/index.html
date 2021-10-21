@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>메타몽</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="메타몽 자기소개">
     <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css">
@@ -10,12 +10,48 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <ul class="main-nav">
-            <li><a href="introduce.html">소개</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
-    </header>
+    <div id = "home" class = "big-bg">
+        <header class="main-header wrapper">
+            <h1 id="main-text" ><a href="index.html">메타몽</a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="introduce.html">소개</a></li>
+                    <li><a href="mating.html">교배</a></li>
+                    <li><a href="cute.html">귀여워</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-content wrapper">
+            <img src="images/메타몽 기본.png" id="metameta" width="200" height="200"/>
+            <h2 class="main-title">메타몽에 대해서 알아봅시다!</h2>
+            <p>포켓몬 최강 귀요미 메타몽에 대해서는 모든것을 알아야 해요</p>
+            
+            <button type="button" class="button" onClick="BtnClick()">변신</button>
+                
+        </div><!--메인 메타몽 설명-->
+    <script>
+        var sw = 0;
+        function BtnClick() {
+
+            if(sw == 0)
+            {
+                document.getElementById("metameta").src="https://coresos-phinf.pstatic.net/a/3033fa/3_c13Ud018svc8d69t66lvr2p_4vd8fg.jpg?type=s276" 
+                sw = 1;
+            }
+            else if(sw == 1)
+            {
+                document.getElementById("metameta").src="./images/메타몽 기본.png"
+                sw = 0;
+            }
+        }
+    </script>
+        <footer>
+            <div class="wrapper">
+                <p>
+                    <small>&copy; 메타몽 주식회사</small>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

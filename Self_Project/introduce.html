@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>메타몽 소개</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="메타몽 자기소개">
+    <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id = "introduce" class = "big-bg">
+      
+        <header class="main-header wrapper">
+            <h1 class="main-title"><a href="index.html" ><strong>메타몽</strong></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">홈</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <button type="button" class="btm_image" id="img_btn1"><img src="./images/활기찬 메타몽.jfif" onclick="Catch()"></button>
+        <button type="button" class="btm_image" id="img_btn"><img src="./images/활기찬 메타몽.jfif" onclick="Catch()"></button>
+        <button type="button" class="btm_image" id="img_btn"><img src="./images/활기찬 메타몽.jfif" onclick="Catch()"></button>
+        <button type="button" class="btm_image" id="img_btn"><img src="./images/활기찬 메타몽.jfif" onclick="Catch()"></button>
+        <button type="button" class="btm_image" id="img_btn"><img src="./images/활기찬 메타몽.jfif" onclick="Catch()"></button>
+    </div>
+    <script>
+        var catch_sound = new Audio('Audio/전자음-짧은-띠워-.MP3')
+        function Catch() {
+            document.getElementById("img_btn1").src="https://blog.kakaocdn.net/dn/bTBDb4/btqJVPAOupO/dkUyfhKuVlwBnPvUVkyRn1/img.png"
+            catch_sound.play();
+        }
+    </script>
+    <div class="introduce-contents wrapper">
+        <article >
+            <table border="1">
+                <tr>
+                    <th colspan="3">기본정보</th>
+                </tr>
+                <tr id = "iptable">
+                    <td>이름</td>
+                    <td>성비</td>
+                    <td>타입</td>
+                </tr>
+                <tr>
+                    <td>메타몽</td>
+                    <td>없음</td>
+                    <td>노말</td>
+                </tr>
+            </table>
+        </article>
+
+        <article>
+            <table border="1">
+                <tr>
+                    <th colspan="3">특성</th>
+                </tr>
+                <tr>
+                    <td>유연</td>
+                    <td>마비 상태가 되지 않는다.</td>
+                </tr>
+                <tr>
+                    <td>괴짜</td>
+                    <td>전투에 나오자마자 곧바로 변신한다.</td>
+                </tr>
+            </table>
+        </article>
+    </div>
+    <div  class="main-content wrapper">
+        <h2 class="main-title">메타몽을 잡아보세요!!</h2>
+        <p>죄송하지만 그건 제 잔상입니다만?</p>
+    </div>
+    
+
+    <footer>
+        <div class="wrapper">
+            <p>
+                <small>&copy; 메타몽 주식회사</small>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
